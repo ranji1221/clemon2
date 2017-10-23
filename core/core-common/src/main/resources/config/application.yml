@@ -17,4 +17,14 @@ spring:
   initialSize: 3
   minIdle: 3
   maxActive: 20
-  
+#kaptcha
+kaptcha:
+ border: yes
+ borderColor: 105,179,90
+ imageWidth: 125
+ imageHeight: 45
+ sessionKey: verifyCode
+ textproducerFontColor: blue
+ textproducerCharLength: 4
+ textproducerFontNames: 宋体,楷体,微软雅黑
+ 

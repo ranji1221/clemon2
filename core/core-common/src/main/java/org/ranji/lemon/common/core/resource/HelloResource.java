@@ -1,14 +1,12 @@
-package org.ranji.lemon.common.core.controller;
+package org.ranji.lemon.common.core.resource;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@EnableAutoConfiguration
-public class HelloController {
+public class HelloResource {
 	
-	@RequestMapping("/")
+	@RequestMapping("/hello")
 	public String hello(){
 		return "hello world";
 	}
