@@ -25,7 +25,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @version 1.0
  */
 @SpringBootApplication
-@ComponentScan(basePackages = {"org.ranji.lemon.common.core.config","org.ranji.lemon.common.core.resource","org.ranji.lemon.common.core.service","org.ranji.lemon.common.core.persist"})
+@ComponentScan(basePackages = {"org.ranji.lemon.common.core.config","org.ranji.lemon.common.core.resource","org.ranji.lemon.common.core.service","org.ranji.lemon.common.core.persist","org.ranji.lemon.persist"})
 public class CoreApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CoreApplication.class, args);  

@@ -1,6 +1,6 @@
 #mybatis config
 mybatis:
- typeAliasesPackage: org.ranji.lemon.common.core.model
+ typeAliasesPackage: org.ranji.lemon.model
  mapperLocations: classpath:mapper/**/*.xml
 #druid datasource
 spring:

@@ -41,7 +41,7 @@ public class HelloTest {
 	@Test
 	public void testController()throws Exception{
 		//-- 1. http get request test
-		String result = mockMvc.perform(MockMvcRequestBuilders.get("/")).andReturn().getResponse().getContentAsString();
+		String result = mockMvc.perform(MockMvcRequestBuilders.get("/hello")).andReturn().getResponse().getContentAsString();
 		//-- 2. assert
 		Assert.assertEquals(result, "hello world");
 	}

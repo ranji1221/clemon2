@@ -4,12 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
-		<groupId>core</groupId>
+		<groupId>org.ranji.lemon</groupId>
 		<artifactId>core</artifactId>
 		<version>1.0</version>
 	</parent>
 	
-	<groupId>core-common</groupId>
 	<artifactId>core-common</artifactId>
 	<name>core-common</name>
 	
@@ -49,13 +48,16 @@
 		    <groupId>org.apache.commons</groupId>
 		    <artifactId>commons-lang3</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-text</artifactId>
+		</dependency>
 		
 		<!-- 验证码框架 -->
 		<dependency>
 			<groupId>com.github.penggle</groupId>
 			<artifactId>kaptcha</artifactId>
 			<version>2.3.2</version>
-			
 			<!-- 排除自带的servlet api -->
 			<exclusions> 
 			  <exclusion> 
@@ -63,8 +65,25 @@
 			   <groupId>javax.servlet</groupId> 
 			  </exclusion> 
 			 </exclusions>
-			
 		</dependency>
+		
+		<!-- Shiro安全框架 -->
+		<dependency>  
+		    <groupId>org.apache.shiro</groupId>  
+		    <artifactId>shiro-core</artifactId>  
+		</dependency>  
+		<dependency>  
+		    <groupId>org.apache.shiro</groupId>  
+		    <artifactId>shiro-web</artifactId>  
+		</dependency>  
+		<dependency>  
+		    <groupId>org.apache.shiro</groupId>  
+		    <artifactId>shiro-spring</artifactId>  
+		</dependency>  
+		<dependency>  
+		    <groupId>org.apache.shiro</groupId>  
+		    <artifactId>shiro-ehcache</artifactId>  
+		</dependency>  
 		
 	</dependencies>
 	
