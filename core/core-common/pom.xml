@@ -85,6 +85,12 @@
 		    <artifactId>shiro-ehcache</artifactId>  
 		</dependency>  
 		
+		<!-- Thymeleaf模板引擎，替换JSP -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		
 	</dependencies>
 	
 	<build>

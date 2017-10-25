@@ -19,11 +19,11 @@ import com.google.code.kaptcha.Constants;
 public class LoginController {
 	
 	
-	
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public ModelAndView loginPage(){
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("/auth/login");
+		mv.addObject("key", "hello world");
+		mv.setViewName("/index");
 		return mv;
 	}
 	

@@ -63,5 +63,5 @@ public interface IUserService extends IGenericService<User, Integer> {
 	 * @return 角色id集合
 	 */
 	public List<Integer> findUserAndRolesByUserId(int userId);
-
+	
 }

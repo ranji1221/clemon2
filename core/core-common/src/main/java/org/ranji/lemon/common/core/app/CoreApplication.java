@@ -2,6 +2,7 @@ package org.ranji.lemon.common.core.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -25,7 +26,8 @@ import org.springframework.context.annotation.ComponentScan;
  * @version 1.0
  */
 @SpringBootApplication
-@ComponentScan(basePackages = {"org.ranji.lemon.common.core.config","org.ranji.lemon.common.core.resource","org.ranji.lemon.common.core.service","org.ranji.lemon.common.core.persist","org.ranji.lemon.persist"})
+@ServletComponentScan(basePackages = {"org.ranji.lemon.common.core.filter","org.ranji.lemon.common.core.servlet"})
+@ComponentScan(basePackages = {"org.ranji.lemon.common.core.config","org.ranji.lemon.common.core.resource","org.ranji.lemon.common.core.service","org.ranji.lemon.common.core.persist","org.ranji.lemon.persist","org.ranji.lemon.service"})
 public class CoreApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CoreApplication.class, args);  

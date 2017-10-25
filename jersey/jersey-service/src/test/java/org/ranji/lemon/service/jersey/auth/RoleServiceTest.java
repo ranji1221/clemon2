@@ -2,10 +2,11 @@ package org.ranji.lemon.service.jersey.auth;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.ranji.lemon.common.core.app.CoreApplication;
 import org.ranji.lemon.model.jersey.auth.Role;
 import org.ranji.lemon.service.jersey.auth.prototype.IRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -32,7 +33,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @version 1.0
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:config/spring-persist.xml","classpath:config/spring-service.xml"})
+@SpringBootTest(classes=CoreApplication.class)  //-- 指定Spring-Boot的启动类
 public class RoleServiceTest {
 	@Autowired
 	private IRoleService roleService;

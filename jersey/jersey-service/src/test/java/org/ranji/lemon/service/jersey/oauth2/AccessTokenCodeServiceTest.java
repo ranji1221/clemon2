@@ -2,14 +2,15 @@ package org.ranji.lemon.service.jersey.oauth2;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.ranji.lemon.common.core.app.CoreApplication;
 import org.ranji.lemon.model.jersey.oauth2.AccessTokenCode;
 import org.ranji.lemon.service.jersey.oauth2.prototype.IAccessTokenCodeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:config/spring-persist.xml","classpath:config/spring-service.xml"})
+@SpringBootTest(classes=CoreApplication.class)  //-- 指定Spring-Boot的启动类
 public class AccessTokenCodeServiceTest {
 	
 	@Autowired

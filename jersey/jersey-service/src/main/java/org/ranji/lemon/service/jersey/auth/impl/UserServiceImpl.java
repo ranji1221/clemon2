@@ -3,11 +3,14 @@ package org.ranji.lemon.service.jersey.auth.impl;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.apache.shiro.authc.credential.DefaultPasswordService;
 import org.ranji.lemon.common.core.service.impl.GenericServiceImpl;
 import org.ranji.lemon.model.jersey.auth.User;
 import org.ranji.lemon.persist.jersey.auth.prototype.IUserDao;
+import org.ranji.lemon.service.jersey.auth.prototype.IRoleService;
 import org.ranji.lemon.service.jersey.auth.prototype.IUserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 /**
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -35,6 +38,8 @@ import org.springframework.stereotype.Service;
 @Service("JerseyUserServiceImpl") //-- 为解决其他项目中也有项目的类名，则利用@Autowired自动注入冲突的问题
 public class UserServiceImpl extends GenericServiceImpl<User, Integer> implements IUserService {
 	
+	@Autowired
+	IRoleService roleService;
 	
 	
 	@Override
