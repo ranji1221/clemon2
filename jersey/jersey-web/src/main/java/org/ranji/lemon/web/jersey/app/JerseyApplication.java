@@ -1,7 +1,6 @@
 package org.ranji.lemon.web.jersey.app;
 
 import java.util.concurrent.TimeUnit;
-
 import org.ranji.lemon.common.core.app.CoreApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
